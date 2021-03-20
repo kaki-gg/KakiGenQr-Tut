@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KakiQrGen</title>
+  <script src="node_modules/qrcode/build/qrcode.min.js"></script>
+</head>
+
+<body>
+  <canvas id="qrcode"></canvas>
+
+  <script>
+    const qrCanvas = document.getElementById('qrcode');
+    QRCode.toCanvas(qrCanvas, 'https://kaki.gg/', {
+      errorCorrectionLevel: 'H'
+    });
+  </script> 
+</body>
+</html>
